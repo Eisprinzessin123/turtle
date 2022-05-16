@@ -1,0 +1,12 @@
+for (int zeile = 0; zeile < 6; zeile++) {
+      for (int spalte = 0; spalte < 4; spalte++) {
+        spielfeld1[zeile][spalte] = new Eisfläche(0, spalte, zeile);
+        spielfeld1[zeile][spalte].setLayoutX(80+spalte*70);
+        spielfeld1[zeile][spalte].setLayoutY(50+zeile*70);
+        spielfeld1[zeile][spalte].setPrefHeight(70);
+        spielfeld1[zeile][spalte].setPrefWidth(70);
+        spielfeld1[zeile][spalte].setDisable(true);
+        //spielfeld1[zeile][spalte].setStyle("-fx-background-color: blue;");          
+        root.getChildren().add(spielfeld1[zeile][spalte]);        
+      }
+    } 
